@@ -4,7 +4,7 @@ Java se utiliza para:
 
     - Moviles
     - Web
-    - Programa de escritorio
+    - Programas de escritorio
     ...
 
 ## Caracteristicas
