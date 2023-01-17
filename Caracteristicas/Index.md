@@ -1,3 +1,5 @@
+- [Ménu](../README.md)
+
 # Caracteristicas
 
 ## Propiedades
@@ -19,7 +21,7 @@ Java -> Bytecode
 
 - Java SE (Java Standar Edition)
 
-> Incluye las clases generales
+> `#RRGGBB` Incluye las clases generales
 
 - Java EE (Java Entrepise Edition)
 

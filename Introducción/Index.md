@@ -10,3 +10,5 @@ Java se utiliza para:
     - Web
     - Programas de escritorio
     ...
+
+- [Instalación](../Instalación/index.md)
