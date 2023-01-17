@@ -1,9 +1,9 @@
 # Introducción
 
 Java se utuliza para:
-    1 - Moviles
-    2 - Web
-    3 - Programa de escritorio
+    - Moviles
+    - Web
+    - Programa de escritorio
     ...
 
 ## Caracteristicas
