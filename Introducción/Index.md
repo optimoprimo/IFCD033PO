@@ -10,6 +10,7 @@ Java se utiliza para:
 ## Caracteristicas
 
 ### Propiedades
+
     - Orientado a Objetos
     - Robusto
     - Seguro
@@ -26,10 +27,15 @@ Java -> Bytecode
 ### Ediciones de Java
 
 - Java SE (Java Standar Edition)
-> Incluye las clases generales 
+
+> Incluye las clases generales
+
 - Java EE (Java Entrepise Edition)
+
 > Incluye las clases para la creación de aplicaciones empresariales
+
 - Java ME (Java Micro Edition)
+
 > Incluye las clases y librerias para poder ejecutarse en dispositivos electronicos
 
 ### Versiones de Java
