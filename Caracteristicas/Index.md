@@ -21,7 +21,7 @@ Java -> Bytecode
 
 - Java SE (Java Standar Edition)
 
-> `#RRGGBB` Incluye las clases generales
+> `#0969DA` Incluye las clases generales
 
 - Java EE (Java Entrepise Edition)
 

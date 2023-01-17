@@ -11,4 +11,4 @@ Java se utiliza para:
     - Programas de escritorio
     ...
 
-- [Instalación](../Instalación/index.md)
+- [Caracteristicas](../Caracteristicas/Index.md)
