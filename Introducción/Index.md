@@ -42,7 +42,7 @@ LTS ->  7, 8, 11, 17 (proximamente 21).
 
 Para descargar el JDK
 
--[Oracle](https://www.oracle.com/java/technologies/downloads)
--[OpenJDK](https://openjdk.org/install/)
+- [Oracle](https://www.oracle.com/java/technologies/downloads)
+- [OpenJDK](https://openjdk.org/install/)
 
 ### IDE
