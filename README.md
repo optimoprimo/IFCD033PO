@@ -3,6 +3,6 @@ Formación JAVA
 
 ## Programación de aplicaciones con Java
 
-- [Introdución](Introducción/Index.md)
+- [Introducción](Introducción/Index.md)
 - [Características de Java](Caracteristicas/Index.md)
 - [Instalación](Instalación/Index.md)
