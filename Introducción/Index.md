@@ -2,6 +2,8 @@
 
 # Introducción
 
+- [Java.com](https://www.java.com/es/)
+
 Fue comercializada por primera vez en 1995 por Sun Microsystems
 
 Java se utiliza para:
@@ -10,5 +12,7 @@ Java se utiliza para:
     - Web
     - Programas de escritorio
     ...
+
+No confundir Java con Javascript
 
 - [Caracteristicas](../Caracteristicas/Index.md)

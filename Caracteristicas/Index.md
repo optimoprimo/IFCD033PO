@@ -36,3 +36,5 @@ Java -> Bytecode
 Desde Java 9, Oracle lanza una versión de Java cada seis meses. Y cada 3 años (ahora parece ser cada dos años) una de estas versiones es LTS (Long Time Support)
 
 LTS ->  7, 8, 11, 17 (proximamente 21).
+
+- [Instalación](../Instalación/Index.md)
