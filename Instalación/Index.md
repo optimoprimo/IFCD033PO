@@ -12,7 +12,6 @@ EL JDK (Java Development Kit) incluye las herramientas básicas para compilar y 
 - [OpenJDK](https://openjdk.org/install/)
 
 - [Curso] (https://redirectoronline.com/ifcd033po0101)
-- [Enlace] (https://www.oracle.com/java/technologies/downloads/) en caso de que el redireccionar no funcione
 
 ## IDE
 
