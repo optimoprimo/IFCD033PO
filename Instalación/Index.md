@@ -11,6 +11,9 @@ EL JDK (Java Development Kit) incluye las herramientas básicas para compilar y 
 - [Oracle](https://www.oracle.com/java/technologies/downloads)
 - [OpenJDK](https://openjdk.org/install/)
 
+- [Curso] (https://redirectoronline.com/ifcd033po0101)
+- [Enlace] (https://www.oracle.com/java/technologies/downloads/) en caso de que el redireccionar no funcione
+
 ## IDE
 
 IDE o Entorno de desarrollo integrado, es un programa que simplifica la programación, compilación y ejecución  de programas.
@@ -19,3 +22,5 @@ IDE o Entorno de desarrollo integrado, es un programa que simplifica la programa
 - [NetBeans](https://netbeans.apache.org/download/index.html)
 - [IntellijIDEA](https://www.jetbrains.com/es-es/idea/)
 - [VScode](https://code.visualstudio.com/)
+
+- [Curos] (https://redirectoronline.com/ifcd033po0102)
