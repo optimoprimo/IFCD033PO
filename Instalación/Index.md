@@ -23,4 +23,8 @@ IDE o Entorno de desarrollo integrado, es un programa que simplifica la programa
 ## Creación de un proyecto Java
 
 - Create a Java Project
+
+<img alt="PNG" src="../Imagenes/CreateJavaProyect.PNG />
+
+
 - File -> New -> Java Project
