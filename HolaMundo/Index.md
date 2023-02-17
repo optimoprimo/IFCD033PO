@@ -23,3 +23,11 @@ JRE son las apis basicas de java, y src es el directorio donde crearemos nuestro
 File -> new -> Class
 
 <img alt="PNG" src="../Imagenes/HolaMundo/NuevaClase.PNG" />
+
+Por ahora solo le daremos nombre a nuestra clase y la crearemos con las opciones por defecto.
+
+```java
+    public class HolaMundo {
+
+    }
+````
