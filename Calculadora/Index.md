@@ -104,3 +104,20 @@ public class Calculadora {
 	}
 }
 ````
+
+Estos operadores solo funcionan con los valores numericos, con las cademas de texto solo podemos utilizar el operador + y resulta la unión de las dos cadenas
+
+````java
+public class Calculadora {
+	public static void main(String[] args) {
+		// Defino 2 variables
+		String variable1 = "Hola";
+		String variable2 = "Mundo";
+		
+		System.out.println(variable1+variable2);
+	}	
+}
+````
+
+## Interactuar con la pantalla
+
