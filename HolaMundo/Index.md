@@ -31,6 +31,48 @@ Por ahora solo le daremos nombre a nuestra clase y la crearemos con las opciones
 
     }
 ````
+<details><summary>Nomenclatura</summary>
+
+
+Los nombre de las variables y metodos siguen ciertas reglas que debemos tener en cuenta a la hora de definir.
+
+1- El nombre debe comenzar por una letra, guión bajo (_) o un simbolo de divisa ($, €, ¥...).
+
+2- Los nombres pueden incluir números, pero nunca comenzar con ellos.
+
+3- El caracter uncio _ como nombre no esta permitido (A partir de Java 9 en adelante)
+
+4 -No se puede utilizar ninguna de las palabras reservadas de java como nombre de una variable.
+
+| || ||
+| --- | --- | --- | --- |
+| abstract | assert | boolean | break |
+| byte | case | catch | char |
+| class | const | continue | default |
+| do | double | else | enum |
+| extens | final | finally | float |
+| for | goto | if | implements |
+| import | instaceof | int | interface |
+| long | native | new | packagae |
+| private | protected | public | return |
+| short | static | strictfp | super |
+| switch | synchronized | this | throw |
+| throws | transient | try | void |
+| volatile | while || |
+
+De esta forma podemos tener normbre validos como:
+    - HolaMundo
+    - MyClase
+    - myclase2
+    - $estoTambienVale
+
+Pero no podriamos tener nombres como:
+    - Hola Mundo
+    - 2holaMundo
+
+No es obligatorio y pero por consenso se utiliza la notación CamelCase. Y en el caso de las clases siempre se suele comenzar por mayuscula
+
+</details>
 
 Por defecto, las aplicaciones java tiene una función inicial (main) que es punto de inicio de la aplicación. La syntaxis de la función siempre es la misma ->
 
