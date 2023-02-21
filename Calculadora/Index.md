@@ -162,3 +162,44 @@ public class Calculadora {
 	}	
 }
 ````
+
+## Ejercicio calculadora
+
+Punto de partida 
+
+````java
+import javax.swing.JOptionPane;
+
+public class Calculadora {
+	public static void main(String[] args) {
+		// pedimos los datos
+		String miVariable1 = JOptionPane.showInputDialog("Introduce el primer número");
+		String miVariable2 = JOptionPane.showInputDialog("Introduce el segundo número");
+
+		// cambio las variables a tipo double
+		double miNumero1;
+		double miNumero2;
+		miNumero1 = Double.parseDouble(miVariable1);
+		miNumero2 = Double.parseDouble(miVariable2);
+
+		// realizamos las operaciones
+		// Suma
+		double resultado = miNumero1 + miNumero2;
+		JOptionPane.showMessageDialog(null, "La suma de ambos números es " + resultado);
+
+		// Resta
+		resultado = miNumero1 - miNumero2;
+		JOptionPane.showMessageDialog(null, "La resta de ambos números es " + resultado);
+
+		// Multiplicación
+		resultado = miNumero1 * miNumero2;
+		JOptionPane.showMessageDialog(null, "La multiplicación de ambos números es " + resultado);
+
+		// División
+		resultado = miNumero1 / miNumero2;
+		JOptionPane.showMessageDialog(null, "La división de ambos números es " + resultado);
+	}
+}
+````
+
+Divideremos la funcionalidad en funciones.
