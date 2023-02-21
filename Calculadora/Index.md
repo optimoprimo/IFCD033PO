@@ -46,4 +46,42 @@ Las variables se definen de la siguiente forma ->
     int miNumero;
     miNumero = 10;
     int miNumero2 = 20;
-´´´´
+````
+
+## Operaciones
+
+Una vez que sabemos que tipos de variables tenemos vamos a ver que tipo de operaciones tenemos:
+
+| Tipo| Unario| BInario |
+| --- | --- | --- |
+| + | hace positivo un número | suma dos números |
+| - | hace negativo un número | resta dos números |
+| * | - | multiplica dos números |
+| / | - | divide dos números |
+| % | -| nos devuelve el resto de una división |
+
+````java
+public class Calculadora {
+
+	public static void main(String[] args) {
+		// Defino dos variables
+		double variable1 = 5.5;
+		double variable2 = 3.3;
+
+		// Probamos los diferentes operadores
+
+		System.out.println("Suma de los dos números es igual a " + (variable1 + variable2));
+		System.out.println("Resta de los dos números es igual a " + (variable1 - variable2));
+		System.out.println("Multiplicación de los dos números es igual a " + (variable1 * variable2));
+		System.out.println("Division de los dos números es igual a " + (variable1 / variable2));
+		System.out.println("Modulo de los dos números es igual a " + (variable1 % variable2));
+
+		// Probamos los operadores unarios
+		double variable3 = -9;
+		double variable4 = 5;
+
+		System.out.println("Hacemos un número postitivo ya negativo " + (-variable3));
+		System.out.println("Hacemos un número negativo que ya era positivo " + (-variable4));
+	}
+}
+````
