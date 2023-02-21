@@ -60,16 +60,16 @@ Una vez que sabemos que tipos de variables tenemos vamos a ver que tipo de opera
 | / | - | divide dos números |
 | % | -| nos devuelve el resto de una división |
 
+Ejemplos
+
 ````java
 public class Calculadora {
-
 	public static void main(String[] args) {
 		// Defino dos variables
 		double variable1 = 5.5;
 		double variable2 = 3.3;
 
 		// Probamos los diferentes operadores
-
 		System.out.println("Suma de los dos números es igual a " + (variable1 + variable2));
 		System.out.println("Resta de los dos números es igual a " + (variable1 - variable2));
 		System.out.println("Multiplicación de los dos números es igual a " + (variable1 * variable2));
@@ -80,8 +80,27 @@ public class Calculadora {
 		double variable3 = -9;
 		double variable4 = 5;
 
-		System.out.println("Hacemos un número postitivo ya negativo " + (-variable3));
+		System.out.println("Hacemos un número positivo ya negativo " + (-variable3));
 		System.out.println("Hacemos un número negativo que ya era positivo " + (-variable4));
+	}
+}
+````
+
+Igual que en la vida real, las operaciones se realizan de derecha a izquierda, pero hay operadores que tienen una preferencia.
+
+````java
+public class Calculadora {
+	public static void main(String[] args) {
+		// Defino 3 variables
+		double variable1 = 1;
+		double variable2 = 2;
+		double variable3 = 3;
+		
+		System.out.println("Los operadores de multiplicar y dividir se ejectuan antes que los de sumar y restar");
+		System.out.println(variable1 + variable2 * variable3);
+		
+		System.out.println("Podemos hacer que se ejecute antes cosas incluyendolos entre parentesis");
+		System.out.println((variable1 + variable2) * variable3);
 	}
 }
 ````
