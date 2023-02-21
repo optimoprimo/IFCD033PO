@@ -59,7 +59,7 @@ Las variables se definen de la siguiente forma ->
 
 Una vez que sabemos que tipos de variables tenemos vamos a ver que tipo de operaciones tenemos:
 
-| Tipo| Unario| BInario |
+| Tipo| Unario| Binario |
 | --- | --- | --- |
 | + | hace positivo un número | suma dos números |
 | - | hace negativo un número | resta dos números |
