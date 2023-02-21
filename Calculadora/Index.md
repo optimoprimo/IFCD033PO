@@ -6,17 +6,17 @@ Vamos a desarrollar nuestro primer proyecto. Sera una claculadora que nos ayude 
 
 Para ello tenemos que saber que tipos de variables tenemos:
 
-| Nombre| Tipo de dato| Tamaño | valor por defecto|
-| --- | --- | --- | --- |
-| byte | números | de -128 a 127  | 0 |
-| short | números | de -32.768 a 32.767 | 0 |
-| int | números | de -2^31 a 2^31-1 | 0 |
-| long | números | de -2^63 a 2^63-1 | 0L |
-| float | números con decimal | 32 bits | 0.0f |
-| double | números con decimal | 64 bits | 0.0 |
-| char | cualquier caracter | unicode de 16 bits | 'u0000' |
-| boolean | verdadero o falso | true o false | false |
-| String | cadenas de texto | - | null |
+| Nombre| Tipo de dato| Tamaño | valor por defecto| Conversión |
+| --- | --- | --- | --- | --- |
+| byte | números | de -128 a 127  | 0 | Byte.parseByte("") |
+| short | números | de -32.768 a 32.767 | 0 | Short.parseShort("") |
+| int | números | de -2^31 a 2^31-1 | 0 | Integer.parseInt("") |
+| long | números | de -2^63 a 2^63-1 | 0L | Long.parseLong("") |
+| float | números con decimal | 32 bits | 0.0f | Float.parseFloat("") |
+| double | números con decimal | 64 bits | 0.0 | Double.parseDouble("")|
+| char | cualquier caracter | unicode de 16 bits | 'u0000' | - |
+| boolean | verdadero o falso | true o false | false | Boolean.parseBoolean("") |
+| String | cadenas de texto | - | null | String.valueOf("") |
 
 Ejemplos
 
@@ -121,3 +121,36 @@ public class Calculadora {
 
 ## Interactuar con la pantalla
 
+````java
+import java.util.Scanner;
+
+public class Calculadora {
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       
+        System.out.println("Introduce un texto");  
+        String miVariable = sc.nextLine(); 
+        System.out.println("El texto introducido es "+ miVariable);
+        
+        int numero1 = sc.nextInt();
+        System.out.println("Numero1: "+numero1);
+        long numero2 = sc.nextLong();
+        System.out.println("Numero2: "+numero2);
+        double numero3 = sc.nextDouble();
+        System.out.println("Numero3: "+numero3);
+
+        sc.close();
+	}	
+}
+````
+
+````java
+import javax.swing.JOptionPane;
+
+public class Calculadora {
+	public static void main(String[] args) {
+		String myVariable = JOptionPane.showInputDialog("Introduce un texto");
+		JOptionPane.showMessageDialog(null, myVariable);
+	}	
+}
+````
