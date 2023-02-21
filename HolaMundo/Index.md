@@ -34,7 +34,7 @@ Por ahora solo le daremos nombre a nuestra clase y la crearemos con las opciones
 <details><summary>Nomenclatura</summary>
 
 
-Los nombre de las variables y metodos siguen ciertas reglas que debemos tener en cuenta a la hora de definir.
+Los nombre de las clases, variables y metodos siguen ciertas reglas que debemos tener en cuenta a la hora de definir.
 
 1- El nombre debe comenzar por una letra, guión bajo (_) o un simbolo de divisa ($, €, ¥...).
 
