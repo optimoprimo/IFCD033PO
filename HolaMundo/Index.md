@@ -31,8 +31,8 @@ Por ahora solo le daremos nombre a nuestra clase y la crearemos con las opciones
 
     }
 ````
-<details><summary>Nomenclatura</summary>
 
+<details><summary>Nomenclatura</summary>
 
 Los nombre de las clases, variables y metodos siguen ciertas reglas que debemos tener en cuenta a la hora de definir.
 
@@ -83,6 +83,7 @@ Por defecto, las aplicaciones java tiene una función inicial (main) que es punt
 
     }
 ````
+
 y se lo añadiremos a nuestra clase junto con un mensaje para decir "Hola Mundo"
 
 ```java
@@ -114,4 +115,4 @@ public class HolaMundo {
 
 El import trae a nuestra clase el código necesario para poder ejecutar la función que queremos
 
-- [Calculador](../Calculadora/Index.md)
+- [Calculadora](../Calculadora/Index.md)
