@@ -1,4 +1,4 @@
-- [Ménu](../README.md)
+- [Menú](../README.md)
 
 # Calculadora
 
