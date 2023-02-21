@@ -22,7 +22,6 @@ Ejemplos
 
 ````java
     public class Calculadora{
-
         public static void main (String[] args){
             byte variable1 = 1;
             short variable2 = 121;
@@ -32,6 +31,14 @@ Ejemplos
             double variable6 = 6.6;
             char caracter = 'A';
             String cadena = "Hola Mundo";
+            
+            byte variable7 = Byte.valueOf("1");
+            short variable8 = Short.valueOf("1");
+            int variable9 = Integer.valueOf("1");
+            long variable10 = Long.valueOf("1");
+            float variable11 = Float.valueOf("1");
+            double variable12 = Double.valueOf("1");
+            String cadena3 = String.valueOf(variable12);
         }
     }
 ````
