@@ -60,17 +60,17 @@ Los nombre de las clases, variables y metodos siguen ciertas reglas que debemos 
 | throws | transient | try | void |
 | volatile | while || |
 
-De esta forma podemos tener normbre validos como:
-    - HolaMundo
-    - MyClase
-    - myclase2
-    - $estoTambienVale
+- De esta forma podemos tener normbre validos como:
+    -HolaMundo
+    -MyClase
+    -myclase2
+    -$estoTambienVale
 
-Pero no podriamos tener nombres como:
-    - Hola Mundo
-    - 2holaMundo
+- Pero no podriamos tener nombres como:
+    -Hola Mundo
+    -2holaMundo
 
-No es obligatorio y pero por consenso se utiliza la notación CamelCase. Y en el caso de las clases siempre se suele comenzar por mayuscula
+No es obligatorio y pero por consenso se utiliza la notación CamelCase. Y en el caso de las clases siempre se suele comenzar por mayuscula y en metodos y variables por minuscula.
 
 </details>
 
