@@ -60,7 +60,7 @@ Los nombre de las clases, variables y metodos siguen ciertas reglas que debemos 
 | throws | transient | try | void |
 | volatile | while || |
 
-De esta forma podemos tener normbre validos como:
+De esta forma podemos tener nombres validos como:
 
 - HolaMundo
 - MyClase
