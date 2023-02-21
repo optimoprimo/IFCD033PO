@@ -1,4 +1,4 @@
-- [Ménu](../README.md)
+- [Menú](../README.md)
 
 # Hola Mundo
 
@@ -6,9 +6,9 @@
 
 <img alt="PNG" src="../Imagenes/HolaMundo/Opciones.PNG" />
 
-- Proyect name: "HolaMundo" sera el nombre de nuestro proyecto
-- JRE: sera la versión que utilizaremos. En este caso utilizaremos la 17
-- Module: desmarcarmos esta opción. Esto hara que no nos genere un module-info para nuestro proyecto.
+- Proyect name: "HolaMundo" será el nombre de nuestro proyecto
+- JRE: será la versión que utilizaremos. En este caso utilizaremos la 17
+- Module: desmarcamos esta opción. Esto hará que no nos genere un module-info para nuestro proyecto.
 
 ## Estructura del proyecto
 
@@ -16,7 +16,7 @@
   - JRE System Library
   - src
 
-JRE son las apis basicas de java, y src es el directorio donde crearemos nuestro clases java.
+JRE son las apis básicas de java, y src es el directorio donde crearemos nuestro clases java.
 
 ## Crearemos nuestra primera clase
 
@@ -76,7 +76,7 @@ No es obligatorio y pero por consenso se utiliza la notación CamelCase. Y en el
 
 </details>
 
-Por defecto, las aplicaciones java tiene una función inicial (main) que es punto de inicio de la aplicación. La syntaxis de la función siempre es la misma ->
+Por defecto, las aplicaciones java tiene una función inicial (main) que es punto de inicio de la aplicación. La sintaxis de la función siempre es la misma ->
 
 ```java
     public static void main (String[] args) {
@@ -95,12 +95,12 @@ y se lo añadiremos a nuestra clase junto con un mensaje para decir "Hola Mundo"
 
 ## Ejecutar el programa
 
-Originalmente habria que compilar la clase y luego ejecutarla con los comandos javac y java. Pero el ide nos ayuda a desarrollar y se encarga por nostros.
+Originalmente habría que compilar la clase y luego ejecutarla con los comandos javac y java. Pero el ide nos ayuda a desarrollar y se encarga por nosotros.
 Flecha verde.
 
 ## Bonus
 
-Si queremos ejecutar nuestra Hola Mundo de una forma más grafica.
+Si queremos ejecutar nuestra Hola Mundo de una forma más gráfica.
 
 ```java
 import javax.swing.JOptionPane;
@@ -112,6 +112,6 @@ public class HolaMundo {
 }
 ````
 
-El import trae a nuestra clase el codigo necesario para poder ejecutar la función que queremos
+El import trae a nuestra clase el código necesario para poder ejecutar la función que queremos
 
 - [Calculador](../Calculadora/Index.md)

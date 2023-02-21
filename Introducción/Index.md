@@ -15,4 +15,4 @@ Java se utiliza para:
 
 No confundir Java con Javascript
 
-- [Caracteristicas](../Caracteristicas/Index.md)
+- [Características](../Caracteristicas/Index.md)

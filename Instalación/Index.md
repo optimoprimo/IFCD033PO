@@ -1,4 +1,4 @@
-- [Ménu](../README.md)
+- [Menú](../README.md)
 
 # Instalación
 
@@ -6,7 +6,7 @@
 
 Para descargar el JDK
 
-EL JDK (Java Development Kit) incluye las herramientas básicas para compilar y ejecutar programas. Incluye las librerias que conforman Java SE.
+EL JDK (Java Development Kit) incluye las herramientas básicas para compilar y ejecutar programas. Incluye las librerías que conforman Java SE.
 
 - [Oracle](https://www.oracle.com/java/technologies/downloads) * Opción del curso
 - [OpenJDK](https://openjdk.org/install/)

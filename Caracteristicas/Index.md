@@ -12,8 +12,7 @@
 ## JVM
 
 Podemos compilar los programas una vez, y ejecutarlos en cualquier parte, gracias a su JVM.
-La JVM (Java Virtual Machine) es un sowftware que se encarga de intrepretar el código compilado en Java en tiempo de ejecución.
-Es decir podemos utilizar el codigo compilado en una maquina en cualquier otra maquina que tenga una JVM.
+La JVM (Java Virtual Machine) es un software que se encarga de interpretar el código compilado en Java en tiempo de ejecución. Es decir podemos utilizar el código compilado en una máquina en cualquier otra máquina que tenga una JVM.
 
 Java -> Bytecode
 
@@ -23,13 +22,13 @@ Java -> Bytecode
 
 > Incluye las clases generales
 
-- Java EE (Java Entrepise Edition)
+- Java EE (Java Enterprise Edition)
 
 > Incluye las clases para la creación de aplicaciones empresariales
 
 - Java ME (Java Micro Edition)
 
-> Incluye las clases y librerias para poder ejecutarse en dispositivos electronicos
+> Incluye las clases y librerías para poder ejecutarse en dispositivos electrónicos
 
 ## Versiones de Java
 
