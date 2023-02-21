@@ -2,7 +2,7 @@
 
 # Calculadora
 
-Vamos a desarrollar nuestro primer proyecto. Sera una claculadora que nos ayude a sumar, restar, multiplicar y dividor números.
+Vamos a desarrollar nuestro primer proyecto. Será una calculadora que nos ayude a sumar, restar, multiplicar y dividir números.
 
 Para ello tenemos que saber que tipos de variables tenemos:
 
@@ -40,7 +40,7 @@ Las variables se definen de la siguiente forma ->
 
 - primero el tipo de dato (byte, short, int...)
 - luego el nombre de la variable (siguiendo las reglas de nombres)
-- por ultimo el valor de la variable se puede asignar cuando se define o más tarde
+- por último el valor de la variable se puede asignar cuando se define o más tarde
 
 ````java
     int miNumero;
@@ -96,16 +96,16 @@ public class Calculadora {
 		double variable2 = 2;
 		double variable3 = 3;
 		
-		System.out.println("Los operadores de multiplicar y dividir se ejectuan antes que los de sumar y restar");
+		System.out.println("Los operadores de multiplicar y dividir se ejecutan antes que los de sumar y restar");
 		System.out.println(variable1 + variable2 * variable3);
 		
-		System.out.println("Podemos hacer que se ejecute antes cosas incluyendolos entre parentesis");
+		System.out.println("Podemos hacer que se ejecute antes cosas incluyendolos entre paréntesis");
 		System.out.println((variable1 + variable2) * variable3);
 	}
 }
 ````
 
-Estos operadores solo funcionan con los valores numericos, con las cademas de texto solo podemos utilizar el operador + y resulta la unión de las dos cadenas
+Estos operadores solo funcionan con los valores númericos, con las cadenas de texto solo podemos utilizar el operador + y resulta la unión de las dos cadenas
 
 ````java
 public class Calculadora {
