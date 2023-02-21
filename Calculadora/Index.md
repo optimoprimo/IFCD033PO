@@ -184,7 +184,8 @@ public class Calculadora {
 
 		// realizamos las operaciones
 		// Suma
-		double resultado = miNumero1 + miNumero2;
+		double resultado;
+		resultado = miNumero1 + miNumero2;
 		JOptionPane.showMessageDialog(null, "La suma de ambos números es " + resultado);
 
 		// Resta
@@ -199,6 +200,7 @@ public class Calculadora {
 		resultado = miNumero1 / miNumero2;
 		JOptionPane.showMessageDialog(null, "La división de ambos números es " + resultado);
 	}
+
 }
 ````
 
