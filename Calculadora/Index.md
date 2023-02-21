@@ -151,6 +151,7 @@ public class Calculadora {
 	public static void main(String[] args) {
 		String myVariable = JOptionPane.showInputDialog("Introduce un texto");
 		JOptionPane.showMessageDialog(null, myVariable);
+        // nos obliga a hacer una cambio de tipos de variables para trabajar con números
 	}	
 }
 ````
