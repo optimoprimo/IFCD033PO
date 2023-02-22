@@ -52,3 +52,69 @@ public class Bucles {
 	}
 }
 ````
+
+## Punto de partida
+
+´´´´java
+import javax.swing.JOptionPane;
+
+public class Calculadora {
+	public static void main(String[] args) {
+		// Menú con opciones
+		String mensaje = JOptionPane
+				.showInputDialog("Elija una opción \n 1-Sumar \n 2-Restar \n 3-Multiplicar \n 4-Dividir");
+		int opcion = Integer.parseInt(mensaje);
+
+		// pedimos los datos
+		String miVariable1 = JOptionPane.showInputDialog("Introduce el primer número");
+		String miVariable2 = JOptionPane.showInputDialog("Introduce el segundo número");
+
+		// cambio las variables a tipo double
+		double miNumero1;
+		double miNumero2;
+		miNumero1 = Double.parseDouble(miVariable1);
+		miNumero2 = Double.parseDouble(miVariable2);
+
+		// realizamos las operaciones
+		// Suma
+		double resultado;
+		if (opcion == 1) {
+			resultado = sumar(miNumero1, miNumero2);
+			JOptionPane.showMessageDialog(null, "La suma de ambos números es " + resultado);
+		}
+
+		// Resta
+		if (opcion == 2) {
+			resultado = restar(miNumero1, miNumero2);
+			JOptionPane.showMessageDialog(null, "La resta de ambos números es " + resultado);
+		}
+
+		// Multiplicación
+		if (opcion == 3) {
+			resultado = multiplicar(miNumero1, miNumero2);
+			JOptionPane.showMessageDialog(null, "La multiplicación de ambos números es " + resultado);
+		}
+		// División
+		if (opcion == 4) {
+			resultado = dividir(miNumero1, miNumero2);
+			JOptionPane.showMessageDialog(null, "La división de ambos números es " + resultado);
+		}
+	}
+
+	public static double sumar(double num1, double num2) {
+		return num1 + num2;
+	}
+
+	public static double restar(double num1, double num2) {
+		return num1 - num2;
+	}
+
+	public static double multiplicar(double num1, double num2) {
+		return num1 * num2;
+	}
+
+	public static double dividir(double num1, double num2) {
+		return num1 / num2;
+	}
+}
+´´´´
