@@ -185,3 +185,77 @@ public class Calculadora {
 	}
 }
 ````
+
+````java
+import javax.swing.JOptionPane;
+
+public class Calculadora {
+	public static void main(String[] args) {
+		// Menú con opciones
+
+		String mensaje;
+		do {
+			mensaje = JOptionPane
+					.showInputDialog("Elija una opción \n 1-Sumar \n 2-Restar \n 3-Multiplicar \n 4-Dividir \n 5-Salir");
+
+			if (!mensaje.equals("1") && !mensaje.equals("2") && !mensaje.equals("3") && !mensaje.equals("4")) {
+				JOptionPane.showMessageDialog(null, "No es una opción valida");
+			}
+
+		} while (!mensaje.equals("1") && !mensaje.equals("2") && !mensaje.equals("3") && !mensaje.equals("4"));
+		int opcion = Integer.parseInt(mensaje);
+
+		// pedimos los datos
+		String miVariable1 = JOptionPane.showInputDialog("Introduce el primer número");
+		String miVariable2 = JOptionPane.showInputDialog("Introduce el segundo número");
+
+		// cambio las variables a tipo double
+		double miNumero1;
+		double miNumero2;
+		miNumero1 = Double.parseDouble(miVariable1);
+		miNumero2 = Double.parseDouble(miVariable2);
+
+		// realizamos las operaciones
+		// Suma
+		double resultado;
+
+		// con un switch
+		switch (opcion) {
+		case 1:
+			resultado = sumar(miNumero1, miNumero2);
+			JOptionPane.showMessageDialog(null, "La suma de ambos números es " + resultado);
+			break;
+		case 2:
+			resultado = restar(miNumero1, miNumero2);
+			JOptionPane.showMessageDialog(null, "La resta de ambos números es " + resultado);
+			break;
+		case 3:
+			resultado = multiplicar(miNumero1, miNumero2);
+			JOptionPane.showMessageDialog(null, "La multiplicación de ambos números es " + resultado);
+			break;
+		case 4:
+			resultado = dividir(miNumero1, miNumero2);
+			JOptionPane.showMessageDialog(null, "La división de ambos números es " + resultado);
+			break;
+		default:
+			break;
+		}
+	}
+
+	public static double sumar(double num1, double num2) {
+		return num1 + num2;
+	}
+
+	public static double restar(double num1, double num2) {
+		return num1 - num2;
+	}
+
+	public static double multiplicar(double num1, double num2) {
+		return num1 * num2;
+	}
+
+	public static double dividir(double num1, double num2) {
+		return num1 / num2;
+	}
+}
+````
