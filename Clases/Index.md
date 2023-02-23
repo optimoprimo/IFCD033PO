@@ -22,4 +22,15 @@ Esto llama al constructor de nuestra clase
         }
     }
 ````
+Variables Objetos
 
+| Primitivo | Objeto |
+| --- | --- |
+| byte  | Byte |
+| short | Short |
+| int  | Integer |
+| long  | Long |
+| float  | Float |
+| double  | Double|
+| char  | Character |
+| boolean | Boolean |
