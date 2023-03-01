@@ -38,7 +38,6 @@ Mostraremos por pantalla un mensaje que pida un campo hasta que tecleen por pant
 
 Calcular el factorial de un número
 
-
 ## Objetos
 
 ### Objetos 1
@@ -56,6 +55,16 @@ Crear una clase "Piloto" y definir los atributos
 - edad
 - cargo
 
-### Objetos 3
+### Objetos y listas 3
 
 Crear sobre la clase "Avion" un atributo para almacenar varios "Pilotos"
+
+## Listas
+
+### Listas 1
+
+Crear una lista de textos y mostar ordenados alfabeticamente
+
+### Listas 2
+
+Cerar una lista de "Pilotos" y mostarla ordenados por el campo Nombre
