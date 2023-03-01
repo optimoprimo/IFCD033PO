@@ -96,3 +96,35 @@ public class Automovil {
 	}
 }
 ````
+
+¿Por que hemos creado los metodos setter y getter?
+Para controlar como cambiamos los atributos de nuestros objetos.
+
+# toString()
+
+````java 
+	@Override
+	public String toString() {
+		return "Automovil [nSerie=" + nSerie + ", encendido=" + encendido + ", velocidad=" + velocidad + "]";
+	}
+````
+
+Podemos sobreescribir el metodo toString() para mostrar en pantalla los datos de nuestros objetos.
+
+# equals(Object obj)
+
+````java 
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Automovil other = (Automovil) obj;
+		return encendido == other.encendido && Objects.equals(nSerie, other.nSerie) && velocidad == other.velocidad;
+	}
+````
+
+Podemos sobreescribir el metodo equals(Object obj) para poder comparar objetos creados por nosotros.
