@@ -4,8 +4,8 @@
 
 Java tiene dos grandes colecciones
 
--Collections
--Map
+- Collections
+- Map
 
 Collections se divide en 3 grandes colecciones:
 
