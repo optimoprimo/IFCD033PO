@@ -9,3 +9,6 @@ Formación JAVA
 - [HolaMundo](HolaMundo/Index.md)
 - [Calculadora](Calculadora/Index.md)
 - [Bucles](Bucles/Index.md)
+- [Objetos](Objetos/Index.md)
+- [Colecciones](Colecciones//Index.md)
+- [Ejercicios](Ejercicios//Index.md)
