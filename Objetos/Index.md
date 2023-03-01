@@ -46,7 +46,7 @@ La sintaxis es la siguiente;
     // Tipo variables  --- Nomrbe variable --- = ---- new --- constructor
     Automovil               miCoche            =      new     Automovil();
 ````
-Si una clase no tienen ningun  constructor, por defecto Java le añade el constructor vacio. Pero una clase puede tener uno o mas constructores definidos por nosotros.
+Si una clase no tiene ningún constructor, por defecto Java le añade el constructor vacío. Pero una clase puede tener uno o más constructores definidos por nosotros.
 
 ````java 
 public class Automovil {
@@ -97,8 +97,7 @@ public class Automovil {
 }
 ````
 
-¿Por que hemos creado los metodos setter y getter?
-Para controlar como cambiamos los atributos de nuestros objetos.
+¿Por qué hemos creado los métodos setter y getter? Para controlar cómo cambiamos los atributos de nuestros objetos.
 
 # toString()
 
@@ -109,7 +108,7 @@ Para controlar como cambiamos los atributos de nuestros objetos.
 	}
 ````
 
-Podemos sobreescribir el metodo toString() para mostrar en pantalla los datos de nuestros objetos.
+Podemos sobreescribir el método toString() para mostrar en pantalla los datos de nuestros objetos.
 
 # equals(Object obj)
 
@@ -127,4 +126,4 @@ Podemos sobreescribir el metodo toString() para mostrar en pantalla los datos de
 	}
 ````
 
-Podemos sobreescribir el metodo equals(Object obj) para poder comparar objetos creados por nosotros.
+Podemos sobreescribir el método equals(Object obj) para poder comparar objetos creados por nosotros.
