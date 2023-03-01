@@ -37,3 +37,25 @@ Mostraremos por pantalla un mensaje que pida un campo hasta que tecleen por pant
 ### Bucles - Operaciones 4
 
 Calcular el factorial de un número
+
+
+## Objetos
+
+### Objetos 1
+
+Crear una clase "Avion" y definir los atributos
+
+- numero pasajeros
+- aerolinia
+
+### Objetos 2
+
+Crear una clase "Piloto" y definir los atributos
+
+- nombre
+- edad
+- cargo
+
+### Objetos 3
+
+Crear sobre la clase "Avion" un atributo para almacenar varios "Pilotos"
