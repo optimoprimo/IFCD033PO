@@ -20,6 +20,24 @@ Dada una variable numérica, cambiarle el signo. Si es + hacerla -.
 
 Calcular el resto de una división. 29/7 el resto debería dar 1.
 
+## String
+
+### String 1
+
+Dado un texto, mostar por pantalla si contiene una 'a'
+
+### String 2
+
+Dado un texto, mostar por pantalla si empieza por 'a'
+
+### String 3
+
+Dado un texto, mostar por pantalla si termina por 'a'
+
+### String 4
+
+Dado un texto, mostar por pantalla su ultimas dos letras
+
 ## Bucles
 
 ### Bucles 1
