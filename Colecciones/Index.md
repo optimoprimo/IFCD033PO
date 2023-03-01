@@ -9,16 +9,16 @@ Java tiene dos grandes colecciones
 
 Collections se divide en 3 grandes colecciones:
 
--List
--Set
--Queue
+- List
+- Set
+- Queue
 
 Las implementaciones más usadas son:
 
--List -> ArrayList
--Set -> HashSet
--Queue -> LinkedList
--Map -> HashMap
+- List -> ArrayList
+- Set -> HashSet
+- Queue -> LinkedList
+- Map -> HashMap
 
 ````java
 	List<String> lista = new ArrayList<>();
