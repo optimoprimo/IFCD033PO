@@ -44,7 +44,7 @@ Para cerar un objeto de una clase utilizamos el operador new
 La sintaxis es la siguiente;
 ````java
     // Tipo variables  --- Nomrbe variable --- = ---- new --- constructor
-    Automovil         miCoche             =  new Automovil();
+    Automovil               miCoche            =      new     Automovil();
 ````
 Si una clase no tienen ningun  constructor, por defecto Java le añade el constructor vacio. Pero una clase puede tener uno o mas constructores definidos por nosotros.
 
