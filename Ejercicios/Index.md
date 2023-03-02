@@ -88,3 +88,101 @@ Crear una lista de textos y mostrar ordenados alfabéticamente
 ### Listas 2
 
 Crear una lista de "Pilotos" y mostrarla ordenados por el campo Nombre
+
+### Ejercicio Piedra Papel o Tijera
+
+````java
+import javax.swing.JOptionPane;
+
+public class Errores {
+
+	public static void main(String[] args) {
+		// 1 - piedra
+		// 2 - papel
+		// 3 - tijeras
+		
+		JOptionPane.showConfirmDialog(null, "una opcion");
+		
+		Integer opcion = pedirTexto();
+		Integer opcion2 = opcionOrdenador();
+		
+		System.out.print(opcion);
+		System.out.print(opcion2);
+		
+		String mensaje = "perder";
+		
+		if(opcion.equals(opcion2)) {
+			mensaje = "empate";
+		}
+		if(opcion.equals(1) && opcion2.equals(3)) {
+			mensaje = "ganar";
+		}
+		if(opcion.equals(2) && opcion2.equals(1)) {
+			mensaje = "ganar";
+		}
+		if(opcion.equals(3) && opcion2.equals(2)) {
+			mensaje = "ganar";
+		}
+		
+		devolverMensaje(mensaje);
+	}
+
+	public static Integer pedirTexto() {
+		Integer opcion;
+		do {
+			try {
+
+				String texto = JOptionPane.showInputDialog("Elige una opción \n 1-Piedra \n 2-Papel \n 3-Tijera", null);
+				opcion = Integer.parseInt(texto);
+				if (opcion.equals(1) || opcion.equals(2) || opcion.equals(3)) {
+					return opcion;
+				} else {
+					JOptionPane.showMessageDialog(null, "No me has metido una opcion valida");
+				}
+
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(null, "Ehhhh no me has metido un número");
+			}
+		} while (true);
+	}
+
+	public static void devolverMensaje(String variable) {
+
+		switch (variable) {
+		case "ganar": {
+			JOptionPane.showMessageDialog(null, "Has ganado");
+			break;
+		}
+		case "perder": {
+			JOptionPane.showMessageDialog(null, "Has perdido");
+			break;
+		}
+		case "empate": {
+			JOptionPane.showMessageDialog(null, "Has empatado");
+			break;
+		}
+
+		}
+	}
+
+	public static Integer opcionOrdenador() {
+		
+			Double numero = Math.random();
+
+			if (numero < 0.3) {
+				return 1;
+			}
+
+			if (numero < 0.6) {
+				return 2;
+			}
+
+			if (numero < 0.9) {
+				return 3;
+			}
+		
+			return opcionOrdenador();
+
+	}
+}
+````
