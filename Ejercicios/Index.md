@@ -17,7 +17,7 @@ Crearemos dos variables numericos Objeto (Byte, Short, Integer ...) y probaremos
 Dada una variable numérica, cambiarle el signo. Si es + hacerla -.
 
 <details><summary>Respuesta</summary>
-````java
+```java
 		Integer var = 10;
 		//cambiamos de signo con el operador - 
 		System.out.print(-var);
@@ -29,7 +29,7 @@ Dada una variable numérica, cambiarle el signo. Si es + hacerla -.
 Calcular el resto de una división. 29/7 el resto debería dar 1.
 
 <details><summary>Respuesta</summary>
-````java
+```java
 		// Calculamos el modulo de una división con el operador %
 		System.out.print(29%7);
 ````
@@ -42,7 +42,7 @@ Calcular el resto de una división. 29/7 el resto debería dar 1.
 Dado un texto, mostar por pantalla si contiene una 'a'
 
 <details><summary>Respuesta</summary>
-````java
+```java
 		String var = "Hola Mundo";
 		System.out.print(var.concat("a"));
 ````
@@ -53,7 +53,7 @@ Dado un texto, mostar por pantalla si contiene una 'a'
 Dado un texto, mostar por pantalla si empieza por 'a'
 
 <details><summary>Respuesta</summary>
-````java
+```java
 		String var = "Hola Mundo";
 		System.out.print(var.startsWith("a"));
 ````
@@ -64,7 +64,7 @@ Dado un texto, mostar por pantalla si empieza por 'a'
 Dado un texto, mostar por pantalla si termina por 'a'
 
 <details><summary>Respuesta</summary>
-````java
+```java
 		String var = "Hola Mundo";
 		System.out.print(var.endsWith("a"));
 ````
@@ -75,7 +75,7 @@ Dado un texto, mostar por pantalla si termina por 'a'
 Dado un texto, mostar por pantalla su ultimas dos letras
 
 <details><summary>Respuesta</summary>
-````java
+```java
 		String var = "Hola Mundo";
 		System.out.print(var.substring(var.length()-2));
 ````
@@ -88,7 +88,7 @@ Dado un texto, mostar por pantalla su ultimas dos letras
 Mostraremos por pantalla los primeros 50 números desde 0 al 50;
 
 <details><summary>Respuesta</summary>
-````java
+```java
 		for (int i = 0; i <=50 ; i ++) {
 			System.out.println(i);
 		}
@@ -100,7 +100,7 @@ Mostraremos por pantalla los primeros 50 números desde 0 al 50;
 Mostraremos por pantalla los primeros 50 números desde 50 al 0;
 
 <details><summary>Respuesta</summary>
-````java
+```java
 		for (int i = 50; i >= 0 ; i --) {
 			System.out.println(i);
 		}
@@ -123,7 +123,7 @@ Calcular el factorial de un número
 
 <details><summary>Respuesta</summary>
 
-````java
+```java
 		Integer numero = 5;
 		Integer respeusta= 1;
 		for (int i = numero; i > 1 ; i --) {
