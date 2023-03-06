@@ -16,9 +16,24 @@ Crearemos dos variables numericos Objeto (Byte, Short, Integer ...) y probaremos
 
 Dada una variable numérica, cambiarle el signo. Si es + hacerla -.
 
+<details><summary>Respuesta</summary>
+````java
+		Integer var = 10;
+		//cambiamos de signo con el operador - 
+		System.out.print(-var);
+````
+</details>
+
 ### Operaciones 4
 
 Calcular el resto de una división. 29/7 el resto debería dar 1.
+
+<details><summary>Respuesta</summary>
+````java
+		// Calculamos el modulo de una división con el operador %
+		System.out.print(29%7);
+````
+</details>
 
 ## String
 
@@ -26,17 +41,45 @@ Calcular el resto de una división. 29/7 el resto debería dar 1.
 
 Dado un texto, mostar por pantalla si contiene una 'a'
 
+<details><summary>Respuesta</summary>
+````java
+		String var = "Hola Mundo";
+		System.out.print(var.concat("a"));
+````
+</details>
+
 ### String 2
 
 Dado un texto, mostar por pantalla si empieza por 'a'
+
+<details><summary>Respuesta</summary>
+````java
+		String var = "Hola Mundo";
+		System.out.print(var.startsWith("a"));
+````
+</details>
 
 ### String 3
 
 Dado un texto, mostar por pantalla si termina por 'a'
 
+<details><summary>Respuesta</summary>
+````java
+		String var = "Hola Mundo";
+		System.out.print(var.endsWith("a"));
+````
+</details>
+
 ### String 4
 
 Dado un texto, mostar por pantalla su ultimas dos letras
+
+<details><summary>Respuesta</summary>
+````java
+		String var = "Hola Mundo";
+		System.out.print(var.substring(var.length()-2));
+````
+</details>
 
 ## Bucles
 
@@ -44,9 +87,25 @@ Dado un texto, mostar por pantalla su ultimas dos letras
 
 Mostraremos por pantalla los primeros 50 números desde 0 al 50;
 
+<details><summary>Respuesta</summary>
+````java
+		for (int i = 0; i <=50 ; i ++) {
+			System.out.println(i);
+		}
+````
+</details>
+
 ### Bucles 2
 
 Mostraremos por pantalla los primeros 50 números desde 50 al 0;
+
+<details><summary>Respuesta</summary>
+````java
+		for (int i = 50; i >= 0 ; i --) {
+			System.out.println(i);
+		}
+````
+</details>
 
 ### Bucles 3
 
@@ -54,9 +113,26 @@ Mostraremos por pantalla un mensaje que pida un campo hasta que tecleen por pant
 
 - Diferenciar Mayusculas y minusculas
 
+<details><summary>Respuesta</summary>
+  - Ver ejercicio piedra, papel y tijera
+</details>
+
 ### Bucles - Operaciones 4
 
 Calcular el factorial de un número
+
+<details><summary>Respuesta</summary>
+
+````java
+		Integer numero = 5;
+		Integer respeusta= 1;
+		for (int i = numero; i > 1 ; i --) {
+			respeusta *= i;
+		}
+		System.out.println(respeusta);
+````
+
+</details>
 
 ## Objetos
 
