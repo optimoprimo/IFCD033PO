@@ -88,11 +88,13 @@ Dado un texto, mostar por pantalla su ultimas dos letras
 Mostraremos por pantalla los primeros 50 números desde 0 al 50;
 
 <details><summary>Respuesta</summary>
-```java
+
+````java
 		for (int i = 0; i <=50 ; i ++) {
 			System.out.println(i);
 		}
 ````
+
 </details>
 
 ### Bucles 2
