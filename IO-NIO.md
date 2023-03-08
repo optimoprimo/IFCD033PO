@@ -108,3 +108,20 @@ public class Coche implements Serializable {
 }
 
 ````
+
+
+````sql
+
+CREATE TABLE Persons (
+    PersonID int Primary key,
+    LastName varchar(255),
+    City varchar(255)
+);
+
+INSERT INTO Persons VALUES(1,"Alain","Vitoria");
+INSERT INTO Persons VALUES(2,"Paco","Vitoria");
+INSERT INTO Persons VALUES(3,"Sara","Vitoria");
+INSERT INTO Persons VALUES(4,"Alfredo","Bilbao");
+INSERT INTO Persons VALUES(5,"Mercedes","Bilbao");
+
+````
