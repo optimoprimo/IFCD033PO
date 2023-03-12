@@ -104,3 +104,12 @@ public class Database {
 
 }
 ````
+
+#### Pasar parametros
+
+Para evitar problemas de ejecutar sentencias no deseadas introducidas por los usuarios, tenemos una manera de pasar parametros a las sentencias SQL
+
+````java
+			var pt = con.prepareStatement("Select * from Persons where PersonID = ?");
+			pt.setString(1,"Mi parametro");f
+````
