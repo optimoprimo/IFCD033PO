@@ -2,7 +2,7 @@
 
 # Conexión BBDD
 
-Para conectarnos con una base de datos, necesitamos las clases proporcionadas por el porvedor de la bbdd;
+Para conectarnos con una base de datos, necesitamos las clases proporcionadas por el porveedor de la bbdd;
 
 <img alt="PNG" src="../Imagenes/IncluirLibreria/AddLibreria1.png" />
 <img alt="PNG" src="../Imagenes/IncluirLibreria/AddLibreria2.png" />
@@ -14,9 +14,9 @@ Para conectarnos con una base de datos, necesitamos las clases proporcionadas po
 
 ### JDBC 3.0 vs 4.0 Drivers
 
-Si tenemos una libreria inferior a la versión 4.0, necesitamos registar la clase.
+Si tenemos una librería inferior a la versión 4.0, necesitamos registrar la clase.
+En caso contrario podemos utilizar sin registrar la clase.
 
-En caso, contrario podemos utilizar sin registrar la clase.
 
 ### JDBC URL
 
@@ -107,7 +107,7 @@ public class Database {
 
 #### Pasar parametros
 
-Para evitar problemas de ejecutar sentencias no deseadas introducidas por los usuarios, tenemos una manera de pasar parametros a las sentencias SQL
+Para evitar problemas de ejecutar sentencias no deseadas introducidas por los usuarios, tenemos una manera de pasar parámetros a las sentencias SQL
 
 ````java
 			var pt = con.prepareStatement("Select * from Persons where PersonID = ?");
