@@ -126,34 +126,3 @@ INSERT INTO Persons VALUES(5,"Mercedes","Bilbao");
 
 ````
 
-````java
-package database;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-
-public class Database {
-
-	public static void main(String[] args) throws SQLException, ClassNotFoundException {
-		
-		// Registramos la clase
-        Class.forName("org.sqlite.JDBC");
-        
-        // URL
-		String url = "jdbc:sqlite:C:\\Users\\Usuario\\Desktop\\pro\\lite.txt";
-		// con
-		try(Connection con = DriverManager.getConnection(url)){
-			var pt = con.createStatement();
-			var resultSet = pt.executeQuery("select * from Persons");
-			while(resultSet.next()) {
-				System.out.println(resultSet.getInt(1));
-				System.out.println(resultSet.getString(2));
-				System.out.println(resultSet.getString(3));
-				
-			}
-		}
-	}
-	
-}
-````
