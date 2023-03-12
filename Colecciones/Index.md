@@ -2,91 +2,62 @@
 
 # Colecciones
 
-Java tiene dos grandes colecciones
+Las colecciones de Java se dividen en cuatro tipos principales: List, Set, Queue y Map. A continuación se describen las principales diferencias entre ellos, así como algunos ejemplos de cada uno:
 
-- Collections
-- Map
+- List:
+	- Una colección ordenada de elementos que permite duplicados.
+	- Permite acceder a los elementos por índice.
+	- Se pueden insertar o eliminar elementos en cualquier posición de la lista.
+	- Ejemplo: ArrayList, LinkedList
+- Set:
+	- Una colección que no permite duplicados y no tiene orden.
+	- Los elementos se pueden agregar o eliminar de un conjunto.
+	- Se pueden utilizar operaciones matemáticas de conjuntos como la unión, la intersección y la diferencia para manipular los elementos del conjunto.
+	- Ejemplo: HashSet, TreeSet
+- Queue:
+	- Una colección ordenada de elementos que permite duplicados.
+	- Los elementos se insertan al final de la cola y se eliminan del principio de la cola (FIFO).
+	- Ejemplo: LinkedList, PriorityQueue
+- Map:
+	- Una colección de pares clave-valor que no permite claves duplicadas.
+	- Los elementos se pueden agregar, eliminar y buscar por clave.
+	- Se pueden utilizar operaciones matemáticas de mapas como la unión y la intersección para manipular los elementos del mapa.
+	- Ejemplo: HashMap, TreeMap
 
-Collections se divide en 3 grandes colecciones:
 
-- List
-- Set
-- Queue
+# ejemplos
+````java 
 
-Las implementaciones más usadas son:
+List<String> lista = new ArrayList<>();
+lista.add("manzana");
+lista.add("banana");
+lista.add("cereza");
+System.out.println(lista.get(1)); // salida: "banana"
+lista.remove(0);
+System.out.println(lista); // salida: "[banana, cereza]"
 
-- List -> ArrayList
-- Set -> HashSet
-- Queue -> LinkedList
-- Map -> HashMap
+Set<String> conjunto = new HashSet<>();
+conjunto.add("manzana");
+conjunto.add("banana");
+conjunto.add("cereza");
+conjunto.add("banana"); // no se agregará porque es un duplicado
+System.out.println(conjunto); // salida: "[cereza, banana, manzana]"
 
-Se inicializan utilizando el operador Diamante <> donde indicamos dentro de el la clase que queremos coleccionar.
 
-El caso del mapa, necesitamos dos tipos de clases, una para la key y otro para el valor
+Queue<String> cola = new LinkedList<>();
+cola.add("manzana");
+cola.add("banana");
+cola.add("cereza");
+System.out.println(cola.peek()); // salida: "manzana"
+cola.remove();
+System.out.println(cola); // salida: "[banana, cereza]"
 
-````java
-	List<String> lista = new ArrayList<>();
-	Set<String> set = new HashSet<>();
-	Queue<Integer> queue = new LinkedList<>();
-	Map<String, Integer> mapa = new HashMap<>();
-````
 
-## Metodos cómunes
+Map<String, String> mapa = new HashMap<>();
+mapa.put("nombre", "Juan");
+mapa.put("apellido", "Pérez");
+System.out.println(mapa.get("nombre")); // salida: "Juan"
+mapa.remove("apellido");
+System.out.println(mapa); // salida: "{nombre=Juan}"
 
-````java
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
-import java.util.Set;
-
-public class Collecciones {
-
-	public static void main(String[] args) {
-		
-		List<String> lista = new ArrayList<>();
-		Set<String> set = new HashSet<>();
-		Queue<Integer> queue = new LinkedList<>();
-		Map<String, Integer> mapa = new HashMap<>();
-
-		
-		// Las listas permiten valores repetidos
-		// Metodos para añadir
-		lista.add("Un valor");
-		lista.add("Otro valor");
-		lista.add("Un utlimo valor");
-		
-		// Los set no permiten valores repetidos
-		set.add("Un valor");
-		set.add("Otro valor");
-		set.add("Otro valor"); // al añadir este elemento, ya existe y no se añade a nuestro set
-		
-		// Las colas tambein pueden añadir elementos
-		queue.add(1);
-		queue.add(2);
-		// Pero no se suele trabajar con estos metodos
-		// para añadir un elemento a la a una cola se utiliza offer
-		queue.offer(1);
-		queue.offer(2);
-		// para leer el siguiente elemnto de la cola
-		// peek
-		queue.peek(); // nos permite leer el siguiente registro a tratar
-		
-		// poll
-		queue.poll(); // nos devuelve el siguiente elemento de la lista y lo elimina de la lista
-		
-		//Mapas
-		// Se trata como un diccionario, almacenamos objetos y los podemos recuperar por su key
-		mapa.put("uno", 1);
-		mapa.put("dos", 2);
-		// Para acceder a un elemento utilizaremos su key
-		mapa.get("uno");
-		
-		
-	}
-	
-}
 ````
