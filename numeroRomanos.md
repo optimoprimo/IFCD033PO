@@ -7,8 +7,45 @@ public class Inicio {
 		// Dado un número del 1 al 10
 		// sacarlo por pantalla
 		// en numeros romanos
-		int numero = 49;
+		int numero = 999;
 		while (numero >= 0) {
+			
+			if (numero >= 1000) {
+				System.out.print("M");
+				numero -= 1000;
+				continue;
+			}
+			
+			if (numero >= 900) {
+				System.out.print("CM");
+				numero -= 900;
+				continue;
+			}
+			
+			if (numero >= 500) {
+				System.out.print("D");
+				numero -= 500;
+				continue;
+			}
+			
+			if (numero >= 400) {
+				System.out.print("CD");
+				numero -= 400;
+				continue;
+			}
+			
+			if (numero >= 100) {
+				System.out.print("C");
+				numero -= 100;
+				continue;
+			}
+			
+			if (numero >= 90) {
+				System.out.print("XC");
+				numero -= 90;
+				continue;
+			}
+			
 			if (numero >= 50) {
 				System.out.print("L");
 				numero -= 50;
@@ -88,6 +125,8 @@ public class Inicio {
 //		String[] array = { "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" };
 //		System.out.print(array[numero]);
 	}
+
+}
 
 }
 
