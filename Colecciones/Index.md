@@ -61,3 +61,82 @@ mapa.remove("apellido");
 System.out.println(mapa); // salida: "{nombre=Juan}"
 
 ````
+
+
+````java
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Listas {
+
+	public static void main(String[] args) {
+		// repaso colleciones
+		// Collections
+
+		List<Integer> lista = new ArrayList<>();
+		// añadir elementos
+		lista.add(1); // [ 1 ]
+		lista.add(1); // [ 1, 1]
+		lista.add(10);// [ 1, 1, 10]
+		// recuperar elementos
+		System.out.println(lista.get(2));
+		// modificar
+		lista.set(1, 3);// [ 1, 3, 10]
+		// eliminar
+		lista.remove(0);// [ 3, 10]
+
+		System.out.println(lista);
+		for (int i = 0; i < lista.size(); i++) {
+			System.out.println(lista.get(i));
+		}
+
+		// Hacemos una lista de números
+		List<Integer> listaNumeros = new ArrayList<>();
+		listaNumeros.add(10);
+		listaNumeros.add(100);
+		listaNumeros.add(50);
+		listaNumeros.add(1000);
+		listaNumeros.add(20);
+
+		// sacamos el número más grande
+		// en este caso 1000
+		Integer aux = 0;
+		for (int i = 0; i < listaNumeros.size(); i++) {
+			Integer valor = listaNumeros.get(i);
+			if(valor> aux) {
+				aux = valor;
+			}
+		}
+		System.out.println(aux);
+		// Intentad sacar el segundo más bajo
+		
+		Collections.sort(listaNumeros);
+		System.out.println(listaNumeros.get(1));
+
+		List<String> listaNumerosString = new ArrayList<>();
+		listaNumerosString.add("10");
+		listaNumerosString.add("100");
+		listaNumerosString.add("50");
+		listaNumerosString.add("1000");
+		listaNumerosString.add("20");
+		
+		listaNumerosString.sort((a,b)->{
+			Integer a1 =Integer.parseInt(a);
+			Integer b1 = Integer.parseInt(b);
+			return b1.compareTo(a1);
+		});
+		System.out.println(listaNumerosString.get(1));
+		
+		List<String> miLista3 = new ArrayList<>();
+		miLista3.add("10");
+		miLista3.add("100");
+		miLista3.add(null);
+		miLista3.add("1000");
+		miLista3.add("20");
+		// Eliminar los elementos nulos
+	}
+
+}
+
+````
