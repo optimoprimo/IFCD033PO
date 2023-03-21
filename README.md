@@ -29,3 +29,25 @@ CREATE TABLE Jugadores (
 
 Insert into Jugadores  values (1,'Oscar','BAskonia', 5,1.8);
 ````
+
+````java
+public static void main(String[] args) {
+		// Ejemplo menú
+		menu();
+	}
+
+	public static int menu() {
+		int respuesta = 0;
+		while (respuesta == 0) {
+			try {
+				String opcion = JOptionPane.showInputDialog("Introduce una opción \n 1- Algo \n 2- Otra cosa");
+				respuesta = Integer.parseInt(opcion);
+				// control respuesta
+			} catch (Exception e) {
+				// Mensaje de error
+			}
+		}
+		return respuesta;
+	}
+
+````
