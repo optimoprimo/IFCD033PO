@@ -212,7 +212,7 @@ public class Listas {
 
 ### curso 26/06/2023
 
-`````java
+````java
 
 		// concatenar las letras
 		String[] letras = {"H","o","l","a"};
