@@ -207,3 +207,114 @@ public class Calculadora {
 Divideremos la funcionalidad en funciones.
 
 - [Bucles](../Bucles/Index.md)
+
+### Curso 26/06/2023
+
+````java
+	// orden ejecutar funciones
+	Operacion ope = new Operacion();
+	ope.elegirOpcion();
+	ope.rellenarCampos();
+	ope.comprobarOpcion();
+````
+
+````java 
+package Modelo;
+
+import javax.swing.JOptionPane;
+
+public class Operacion {
+
+	private double numeroUno;
+	private double numeroDos;
+
+	private int respuestaNumerica;
+
+	public Operacion() {
+	}
+
+	public double getNumeroUno() {
+		return numeroUno;
+	}
+
+	public void setNumeroUno(double numeroUno) {
+		this.numeroUno = numeroUno;
+	}
+
+	public double getNumeroDos() {
+		return numeroDos;
+	}
+
+	public void setNumeroDos(double numeroDos) {
+		this.numeroDos = numeroDos;
+	}
+
+	public void rellenarCampos() {
+		String parametro = JOptionPane.showInputDialog("Introduce el primer numero");
+		numeroUno = Double.parseDouble(parametro);
+		String parametro2 = JOptionPane.showInputDialog("Introduce el segundo número");
+		numeroDos = Double.parseDouble(parametro2);
+	}
+
+	public void sumar() {
+		JOptionPane.showMessageDialog(null, "El resultado de la suma de los dos números es " + (numeroUno + numeroDos));
+	}
+
+	public void restar() {
+		JOptionPane.showMessageDialog(null,
+				"El resultado de la resta de los dos números es " + (numeroUno - numeroDos));
+	}
+
+	public void multiplicar() {
+		JOptionPane.showMessageDialog(null,
+				"El resultado de la multiplicación de los dos números es " + (numeroUno * numeroDos));
+	}
+
+	public void dividir() {
+		JOptionPane.showMessageDialog(null,
+				"El resultado de la división de los dos números es " + (numeroUno / numeroDos));
+	}
+
+	public void elegirOpcion() {
+		String enunciado;
+		enunciado = "Introduce una opcion \n 1-sumar \n 2-restar \n 3-multiplicar \n 4-dividir \n 5-salir";
+
+		String respuesta;
+		respuesta = JOptionPane.showInputDialog(enunciado);
+
+		respuestaNumerica = Integer.parseInt(respuesta);
+	}
+
+	public void comprobarOpcion() {
+		if (respuestaNumerica > 0 && respuestaNumerica < 5) {
+			switch (respuestaNumerica) {
+			case 1:
+				sumar();
+				break;
+			case 2:
+				restar();
+				break;
+			case 3:
+				multiplicar();
+				break;
+			case 4:
+				dividir();
+				break;
+			}
+		} else {
+			if (respuestaNumerica == 5) {
+				JOptionPane.showMessageDialog(null, "Adios");
+			} else {
+				JOptionPane.showMessageDialog(null, "Me has dado una opción no valida");
+			}
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Operacion [numeroUno=" + numeroUno + ", numeroDos=" + numeroDos + "]";
+	}
+
+}
+````
+
