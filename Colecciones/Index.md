@@ -208,3 +208,39 @@ public class Listas {
 
 
 ````
+
+
+### curso 26/06/2023
+
+`````java
+
+		// concatenar las letras
+		String[] letras = {"H","o","l","a"};
+		letras = new String[5];
+		String resultado = "";
+		
+		for(int i = 0; i < letras.length; i++) {
+			resultado += letras[i];
+		}
+		System.out.println(resultado);
+
+		// calcular la media
+		int[] numeros = {10, 5, 30};
+		int res = 0;
+		for (int numero : numeros) {
+			res += numero;
+		}
+		System.out.println(res/numeros.length);
+
+		// recorrer un array
+		String[] estaciones = {"Verano", "Otoño","Invierno","Primavera"};
+
+		for(int i = 0; i < estaciones.length ; i++) {
+			System.out.println(estaciones[i]);
+		}
+
+		for (String estacion : estaciones) {
+			System.out.println(estacion);
+		}
+
+````
