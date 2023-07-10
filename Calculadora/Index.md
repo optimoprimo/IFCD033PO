@@ -318,3 +318,55 @@ public class Operacion {
 }
 ````
 
+
+
+````java
+package Vista;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+public class PantallaCalculadora extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+
+		PantallaCalculadora frame = new PantallaCalculadora();
+		frame.setVisible(true);
+
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public PantallaCalculadora() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(btnNewButton, "Acción");
+			}
+		});
+		btnNewButton.setBounds(237, 22, 89, 23);
+		contentPane.add(btnNewButton);
+	}
+}
+
+````
