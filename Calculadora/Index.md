@@ -331,10 +331,13 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JTextField;
+import javax.swing.JToggleButton;
 
 public class PantallaCalculadora extends JFrame {
 
 	private JPanel contentPane;
+	private JTextField consola;
 
 	/**
 	 * Launch the application.
@@ -361,12 +364,110 @@ public class PantallaCalculadora extends JFrame {
 		JButton btnNewButton = new JButton("New button");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(btnNewButton, "Acción");
+				JOptionPane.showMessageDialog(btnNewButton, consola.getText());
 			}
 		});
 		btnNewButton.setBounds(237, 22, 89, 23);
 		contentPane.add(btnNewButton);
+		
+		consola = new JTextField();
+		consola.setEditable(false);
+		consola.setBounds(36, 23, 173, 20);
+		contentPane.add(consola);
+		consola.setColumns(10);
+		
+		JButton botonSiete = new JButton("7");
+		botonSiete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				consola.setText(consola.getText()+"7");
+			}
+		});
+		botonSiete.setBounds(36, 98, 53, 23);
+		contentPane.add(botonSiete);
+		
+		JButton botonOcho = new JButton("8");
+		botonOcho.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				consola.setText(consola.getText()+"8");
+			}
+		});
+		botonOcho.setBounds(99, 98, 53, 23);
+		contentPane.add(botonOcho);
+		
+		JButton botonNueve = new JButton("9");
+		botonNueve.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				consola.setText(consola.getText()+"9");
+			}
+		});
+		botonNueve.setBounds(162, 98, 53, 23);
+		contentPane.add(botonNueve);
+		
+		JButton botonCuatro = new JButton("4");
+		botonCuatro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				consola.setText(consola.getText()+"4");
+			}
+		});
+		botonCuatro.setBounds(36, 132, 53, 23);
+		contentPane.add(botonCuatro);
+		
+		JButton btoonCinco = new JButton("5");
+		btoonCinco.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				consola.setText(consola.getText()+"5");
+			}
+		});
+		btoonCinco.setBounds(99, 132, 53, 23);
+		contentPane.add(btoonCinco);
+		
+		JButton botonSeis = new JButton("6");
+		botonSeis.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				consola.setText(consola.getText()+"6");
+			}
+		});
+		botonSeis.setBounds(162, 132, 53, 23);
+		contentPane.add(botonSeis);
+		
+		JButton botonUno = new JButton("1");
+		botonUno.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				consola.setText(consola.getText()+"1");
+			}
+		});
+		botonUno.setBounds(36, 166, 53, 23);
+		contentPane.add(botonUno);
+		
+		JButton botonDos = new JButton("2");
+		botonDos.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				consola.setText(consola.getText()+"2");
+			}
+		});
+		botonDos.setBounds(99, 166, 53, 23);
+		contentPane.add(botonDos);
+		
+		JButton botonTres = new JButton("3");
+		botonTres.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				consola.setText(consola.getText()+"3");
+			}
+		});
+		botonTres.setBounds(162, 166, 53, 23);
+		contentPane.add(botonTres);
+		
+		JButton botonCero = new JButton("0");
+		botonCero.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				consola.setText(consola.getText()+"0");
+			}
+		});
+		botonCero.setBounds(36, 196, 53, 23);
+		contentPane.add(botonCero);
 	}
 }
+
 
 ````
