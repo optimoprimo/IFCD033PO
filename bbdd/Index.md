@@ -113,3 +113,13 @@ Para evitar problemas de ejecutar sentencias no deseadas introducidas por los us
 			var pt = con.prepareStatement("Select * from Persons where PersonID = ?");
 			pt.setString(1,"Mi parametro");f
 ````
+
+TABLA EXAMEN
+````sql
+CREATE TABLE JUGADORES(
+	ID NUMBER PRIMARY KEY,
+	NOMBRE VARCHAR NOT NULL,
+	DORSAL NUMBER NOT NULL,
+	ALTURA NUMBER NOT NULL
+);
+````
